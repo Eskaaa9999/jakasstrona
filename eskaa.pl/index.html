@@ -1,0 +1,164 @@
+<!DOCTYPE html><html><!-- Mirrored from eskaa.pl/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Jun 2023 14:10:41 GMT --><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to my site!</title>
+    <script src="js/16b229dcfa.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://fonts.cdnfonts.com/css/whitney-2" rel="stylesheet">
+</head>
+
+<body oncontextmenu="return false">
+    <svg viewBox="0 0 1 1" aria-hidden="true" style="position: absolute; pointer-events: none; top: -1px; left: -1px; width: 1px; height: 1px;">
+        <mask id="svg-mask-avatar-status-round-80" maskContentUnits="objectBoundingBox" viewBox="0 0 1 1">
+            <circle fill="white" cx="0.5" cy="0.5" r="0.5"/>
+            <circle fill="black" cx="0.85" cy="0.85" r="0.145"/>
+        </mask>
+        <mask id="svg-mask-status-dnd" maskContentUnits="objectBoundingBox" viewBox="0 0 1 1">
+            <circle fill="white" cx="0.5" cy="0.5" r="0.5"/>
+            <rect fill="black" x="0.125" y="0.375" width="0.75" height="0.25" rx="0.125" ry="0.125"/>
+        </mask>
+    </svg>
+    <main>
+        <h1 id="click">Click anywhere</h1>
+        <div id="members-list" class="members-list">            
+            <div class="card-bg">
+                <div class="card">
+                    <svg style="border-radius: 5px 5px 0px 0px;" viewBox="0 0 340 120">
+                        <mask id="uid_137">
+                            <rect fill="pink" x="0" y="0" width="100%" height="100%"/>
+                            <circle fill="purple" cx="0.20" cy="0.20" r="0.400"/>
+                        </mask>
+                        <foreignobject x="0" y="0" width="100%" height="100%" overflow="visible" mask="url(#uid_137)">
+                            <div style="height: 100%; background-color: rgb(255, 200, 100);">
+                                <img src="images/bg.png" alt=" " style="height: 100%; width: 100%; object-fit:cover;" aria-hidden="true"/>
+                            </div>
+                        </foreignobject>
+                    </svg>
+                    <div class="pfp-wrapper">
+                        <svg width="92" height="92" viewBox="0 0 92 92" aria-hidden="true">
+                            <foreignobject x="0" y="0" width="80" height="80" mask="url(#svg-mask-avatar-status-round-80)">
+                                <div class="avatarStack-3vfSFa"><img src="images/eskaa.gif" alt=" " style="height: 100%; width: 100%; object-fit:cover;" aria-hidden="true"/></div>
+                            </foreignobject>
+                            <rect width="16" height="16" x="60" y="60" fill="hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)" mask="url(#svg-mask-status-dnd)"/>
+                        </svg>
+                    </div>
+                    <div class="badges-wrapper">
+                        <div class="badges">
+                            <img src="fonts/nitro.svg" aria-hidden="true">
+                            <img src="fonts/boost.svg" aria-hidden="true"> 
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="general">
+                            <h1>~s<span class="tag"></span></h1>
+                            <div class="description">
+                                <img src="images/953736221690052648c486.png" aria-hidden="true">
+                                <span class="description-text">Welcome to my site</span>
+                            </div>
+                        </div>
+                        <div class="about_me">
+                            <h1 class="category_title">O MNIE</h1>
+                            <div class="about_me_category">
+                                <img src="images/953736192946503690c486.gif">
+                                <span>html , css , lua (begginier)</span>
+                            </div>
+							<img src="images/953736192946503690c486.gif">
+                            <span>discord.gg/vehicles</span>
+                            </div>
+                        <div class="date_of_creation">
+                            <h1 class="category_title">CZŁONEK DISCORDA OD</h1>
+                            <span>3 kwi 2019</span>
+                        </div>
+                        <div class="spotify">
+                            <div class="title">
+                                <h1 class="category_title">Słucha Spotify</h1>
+                                <img src="images/1024px-Spotify_logo_without_text.svg.png">
+                            </div>
+                            <div class="track_info">
+                                <img src="images/image.png">
+                                <div class="track_text">
+                                    <span class="track_title"><a href="https://www.youtube.com/watch?v=M3Gfqbdl6JY" target="_blank">FUNK MIX</a></span>
+                                    <span class="first_info">by <a href="https://www.youtube.com/@Kalcetoo" target="_blank">Kalcetoo</a></span>
+                                </div>
+                            </div>
+                            <div class="proggress"></div>
+                            <div class="time">
+                                <span id="first">0:00</span>
+                                <span id="second">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="video" style="width:100%;height:0px;padding-bottom:56.250%;"></div>
+    <script>
+        var isMobile = {
+            Android: function () {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function () {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function () {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function () {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function () {
+                return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+            },
+            any: function () {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+        $("#members-list").hide()
+        let show = false
+        let time = 0
+        let videoLength = 121
+
+        $("main").click(() => {
+            if (!show) {
+                show = true
+                $("#click").fadeOut(500)
+                setTimeout(() => {
+                    $("#members-list").fadeIn(500)
+                        $("main").css("background-color", "rgba(21, 21, 21, 0.9)")
+                        $("#video").append(`<iframe src="https://www.youtube.com/embed/M3Gfqbdl6JY?vq=hd1080&autoplay=1&fs=0&color=white&controls=0&disablekb=1" frameborder="0" width="100%" height="100%" volume="1" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>`)
+                        timer()
+                        $("#second").html(`${Math.floor(videoLength / 60)}:${videoLength - 60 * (Math.floor(videoLength / 60))}`)
+                }, 500)
+            }
+        })
+
+        function timer() {
+            setInterval(() => {
+                if (time == videoLength) return time = 0; $("#first").html(`0:0${time}`)
+                time += 1
+                if (time < 10) {
+                    $("#first").html(`0:0${time}`)
+                } else if (time >= 10 && time < 60) {
+                    $("#first").html(`0:${time}`)
+                } else if (time >= 60) {
+                    if (time - 60 * (Math.floor(time / 60)) < 10) {
+                        $("#first").html(`${Math.floor(time / 60)}:0${time - 60 * (Math.floor(time / 60))}`)
+                    } else {
+                        $("#first").html(`${Math.floor(time / 60)}:${time - 60 * (Math.floor(time / 60))}`)
+                    }
+                }
+                $(".proggress").css("background-image", `linear-gradient(90deg, rgba( 255, 252, 254, 1 ) ${(time / videoLength) * 100}%, rgba(33, 35, 38, 1) ${(time / videoLength) * 100}%)`)
+            }, 1000);
+        }
+    </script>
+
+
+
+
+</body><!-- Mirrored from eskaa.pl/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Jun 2023 14:10:44 GMT --></html>
